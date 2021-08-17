@@ -1,0 +1,99 @@
+{% extends "algoblog/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+     
+
+
+
+        <div class="container">
+
+                <div class="links">
+
+                        {% for post in object_list %}
+
+                                <a href="{{ post.get_absolute_url }}">
+
+                                    {{ post.title }}
+
+
+                                </a>
+
+                        {% endfor %}
+                </div>
+
+<!--                
+
+
+                <div class="hello">
+
+
+                       <p>My name is Ivan Urban, I'am full stack developer,</p> 
+                       <p>these are some of my solutions for code challenges and various algorithms.
+                    </p>
+                        
+                        
+
+                
+
+            
+            
+                </div> -->
+      
+
+                
+
+                <div class="posts">
+
+                        {% for l in latest_algorithm %}
+
+                                <h1 class="title">{{ l.title }}</h1>
+                
+                                <div class="date">
+                
+                
+                                Published by {{ l.author }}
+                                <!-- 
+                                                {{ post.publish }} -->
+                
+                                </div>
+                
+                
+                                {% with body=l.body|safe %}
+                
+                                {{ body }}
+                                
+                                {% endwith %}
+                
+                       {% endfor %}
+            
+                            
+
+            </div>
+        
+        
+        
+        
+         
+
+
+              
+
+
+            
+
+
+        
+
+                          
+        </div>
+          
+
+
+
+
+
+{% endblock %}

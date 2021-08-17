@@ -1,0 +1,76 @@
+{% extends "algoblog/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+   
+
+                                    <div class="container">
+
+
+
+
+
+
+
+                                                                <div class="links">
+                                                                    {% for l in link_list%}
+
+
+                                                                            <a href="{{ l.get_absolute_url }}">
+
+                                                                                {{ l.title }}
+
+
+                                                                            </a>
+
+
+                                                                    {% endfor %}
+
+
+                                                                </div>
+
+                                                                <div class="posts">
+
+
+
+                                                                            <h1 class="title">{{ post.title }}</h1>
+
+                                                                            <div class="date">
+
+
+                                                                            Published by {{ post.author }}
+                                                                            <!-- 
+                                                                                            {{ post.publish }} -->
+
+                                                                            </div>
+
+
+                                                                            {% with body=post.body|safe %}
+
+                                                                                {{ body }}
+                                                                                
+                                                                            {% endwith %}
+
+                                                                                
+
+
+                                                                </div>
+
+
+                                    </div>
+
+
+
+
+
+
+
+    
+
+
+{% endblock %}
+
+

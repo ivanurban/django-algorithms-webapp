@@ -1,0 +1,39 @@
+<p style="text-align: justify;">
+<span style="font-size: 12pt; color: var(--color-text-dark-faded); font-family: var(--font-family-text); font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;"> INSERT TEXT 
+</span><span id="MathJax-Element-1-Frame" class="MathJax_SVG" style="border: 0px; font-variant: inherit; font-stretch: inherit; line-height: normal; font-family: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; display: inline-block; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px;"></span>
+<span style="font-size: 12pt; color: var(--color-text-dark-faded); font-family: var(--font-family-text); font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;"></span>
+</p>
+<div class="challenge_problem_statement" style="border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; font-size: 14px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: #0e141e;">
+<div class="msB challenge_problem_statement_body" style="border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; margin: 0px 0px 10px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<div class="hackdown-content" style="border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; text-align: justify;">
+<p style="border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 2; font-family: var(--font-family-text); font-size: 14px; margin: 5px 0px 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: var(--color-text-dark-faded); text-align: justify;"><span style="font-size: 12pt;">For each game, you will get an array of clouds numbered 0 if they are safe or 1 if they must be avoided.</span></p>
+<p style="border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 2; font-family: var(--font-family-text); font-size: 14px; margin: 5px 0px 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: var(--color-text-dark-faded); text-align: justify;"><span style="color: var(--color-text-dark-faded); font-family: var(--font-family-text); font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit; font-size: 12pt;">Link to the full challenge explanation on hackerrank.com:</span></p>
+<p style="border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 2; font-family: var(--font-family-text); font-size: 14px; margin: 5px 0px 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: var(--color-text-dark-faded); text-align: justify;"><a href="https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem">INSERT LINK NAME</a></p>
+<p style="border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 2; font-family: var(--font-family-text); font-size: 14px; margin: 5px 0px 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: var(--color-text-dark-faded); text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<table style="width: 100%; border-collapse: collapse;" border="0"><caption>Code implementation in Python3<br /><br /></caption>
+<tbody>
+<tr>
+<td style="width: 33.3333%;">&nbsp;</td>
+<td style="width: 33.3333%; background-color: #b5b3ca; padding: 50px; -moz-box-shadow: 3px 3px 5px 6px #ccc; -webkit-box-shadow: 3px 3px 5px 6px #ccc; box-shadow: 3px 3px 5px 6px #ccc;">
+<pre class="language-python"><code>
+
+
+
+
+</code></pre>
+</td>
+<td style="width: 33.3333%;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+
+NEKOPIRATI OVO!!
+LINK->TEKST->FONT->KOD

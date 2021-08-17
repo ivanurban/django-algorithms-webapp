@@ -1,0 +1,97 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+
+    <div class="wrapper">
+
+                                        <header>
+                                            <h1> Algorithms and stuff..</h1>
+
+                                            <h3>My solutions to various problems</h3>
+
+                                            <div class="menu">
+                                                <a href="{% url 'algoblog:post_list' %}">home</a>
+                                                <a href="{% url 'algoblog:about' %}">about</a>
+                                                <a href="{% url 'algoblog:contact' %}"">contact</a>
+                                            </div>
+                                            
+                                            
+                                        </header>
+                                    
+                                    {% block content %}
+                                    
+                                    {% endblock %}
+
+<!-- 
+    wrapper end                             -->
+    </div>
+                                    
+                                
+                                <footer class="site-footer">
+                                    <div class="container1">
+                                                
+                                                    <div class="about">
+                                                    <h6>About</h6>
+                                                    <p>urbs.online <i>Ivan Urban </i> 
+                                                        I make photographs and websites. I am proficient in Datbases(MySQL, PostgreSQL) Python/Django, Javascript, CSS, HTML,
+                                                    I am also acquainted with many different technologies </p>
+                                                    </div>
+
+                                                    <div class="email">
+                                                            <h6>Send me an Email</h6>
+                                                            <ul class="footer-links">
+                                                                <form method="post">
+                                                                    {% csrf_token %}
+                                                                        {{ form.as_p }}
+                                                                        <button type="submit">Submit</button>
+                                                                    </form>
+                                                            </ul>
+                                                    </div>
+
+                                                
+                                                
+                                            
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="container2">
+                                        
+                                            
+                                                    <div class="">
+                                                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                                                <a href="#">Urbanero</a>.
+                                                    </p>
+                                                    </div>
+
+                                                    <div class="">
+                                                    <ul class="social-icons">
+                                                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                                                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                                                    </ul>
+                                                    </div>
+                                                
+                                    </div>
+                                </footer> 
+
+
+
+      
+
+</body>
+</html>
