@@ -2,6 +2,7 @@
 
 {% load static %}
 
+
 {% block content %}
 
 
@@ -11,7 +12,7 @@
 
             <div class="contact-text">
 
-                <p>Contact me</p>
+                <h2>Contact me</h2>
                 <p>Feel free to get in touch with me. I am always open to discussing...</p>
 
                 <p>mail icon</p>
@@ -21,11 +22,21 @@
                 <p>+381621693170</p>
             </div>
 
-            <div class="contact-mail">
+            <div class="contact-email">
+                <h4>Send me an Email</h4>
+                
+                <div class="email-form">
+                    <form method="post">
+                        {% csrf_token %}
+                        <table>
+                            {{ form.as_table  }}
+                        </table>
+                            <button id="sendMailButton" type="submit">Submit</button>
+                        </form>
+                </div>
+                
+        </div>
 
-
-
-            </div>
 
     </div>
     

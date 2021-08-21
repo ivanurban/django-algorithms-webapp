@@ -1,8 +1,12 @@
 from django.shortcuts import render
 
-from django.views.generic import ListView, DetailView, TemplateView
+from django.views.generic import ListView, DetailView, TemplateView, FormView
+
+from .forms import ContactForm
 
 from .models import Post
+
+from django.urls import reverse_lazy
 
 
 
@@ -31,7 +35,26 @@ class AlgoBlogDetailView(DetailView):
 class AboutView(TemplateView):
     template_name = 'algoblog/post/about.html'    
 
-class ContactView(TemplateView):
+# class ContactView(TemplateView):
+#     template_name = 'algoblog/post/contact.html'    
+
+class ContactFormView(FormView):
+    form_class = ContactForm
     template_name = 'algoblog/post/contact.html'    
+    success_url = reverse_lazy('algoblog:success')
+
+
+    def form_valid(self, form):
+        #calls custom send method from forms.py
+        form.send()
+        return super().form_valid(form)
+
+
+# contact/views.py
+class ContactSuccessView(TemplateView):
+    template_name = 'algoblog/post/success.html'
+
+
+
 
 

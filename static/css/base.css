@@ -186,9 +186,28 @@ justify-content: space-between;
 
 .contact-container{
         
+    width: 80%;
+    margin:50px auto 0 auto;
+    padding:50px;
         display:flex;
-        justify-content: center;
+        justify-content: space-around;
 
+}
+
+.contact-text{
+
+}
+
+.contact-email{
+
+
+}
+#sendMailButton{
+
+    padding:10px;
+    background-color: transparent;
+    border-radius: 15px;
+    float: right;
 }
 
 
@@ -220,15 +239,17 @@ justify-content: space-between;
 
         width: 70%;
         margin: auto;
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
+    
       
       
 }
 
 .site-footer .container1 .about p{
 
-        width: 50%;
+        width: 100%;
+       
       
         
 }
@@ -278,47 +299,20 @@ justify-content: space-between;
   color:#3366cc;
   text-decoration:none;
 }
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-    display: flex;
-    justify-content:space-between;
-    min-width: 250px;
-    max-width: 250px;
 
-  /* text-align:right */
+.soc-icons {
+
+    display: flex;
+    justify-content: space-around;
+
 }
-.site-footer .social-icons a
+.container2 .soc-icons  a img
 {
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
+
+
+  background-color:#33353d;
 }
+
 .copyright-text
 {
   margin:0

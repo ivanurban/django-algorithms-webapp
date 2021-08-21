@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 django = "*"
 django-tinymce4-lite = "*"
+django-environ = "*"
 
 [requires]
 python_version = "3.6"
