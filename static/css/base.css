@@ -62,7 +62,7 @@ justify-content: space-between;
 .menu a{
 
     color: #3B9778;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight:400 ;
     text-decoration: none;
     color:#477158;
@@ -191,29 +191,63 @@ justify-content: space-between;
     padding:50px;
         display:flex;
         justify-content: space-around;
+       
+      
+     
 
 }
 
-.contact-text{
 
+.form-group{
+
+    margin:10px 0 0 0;
 }
 
-.contact-email{
+.form-control-text{
 
-
+    height: 40px;
+    width: 500px;
 }
+
+.form-control-textarea{
+
+  
+    width: 500px;
+}
+
 #sendMailButton{
 
     padding:10px;
-    background-color: transparent;
-    border-radius: 15px;
-    float: right;
+    width: 500px;
+   
+    
+  
+    color:#B5B3CA;
 }
 
 
 
 /*about page*/
 
+
+.container-about{
+    width: 80%;
+    margin:50px auto 0 auto;
+    padding:50px;
+        display:flex;
+        justify-content: space-around;
+
+
+        
+}
+
+.about-image{
+
+}
+.about-text{
+
+
+}
 
 
 /*FOOTER*/
@@ -239,20 +273,40 @@ justify-content: space-between;
 
         width: 70%;
         margin: auto;
-        /* display: flex;
-        justify-content: center; */
-    
-      
+        display: flex;
+        justify-content: space-between;
+        margin:auto;
+ 
       
 }
 
-.site-footer .container1 .about p{
+.site-footer .container1 .about {
 
-        width: 100%;
-       
+        width: 50%;
+
+     
       
         
 }
+
+.site-footer .container1 .footer-contact {
+
+    width: 50%;
+    
+
+    
+
+    
+}
+
+.site-footer .container1 .footer-contact .inner-contact {
+
+
+text-align: right;
+
+    
+}
+
 
 
 .site-footer .container2{
@@ -299,6 +353,8 @@ justify-content: space-between;
   color:#3366cc;
   text-decoration:none;
 }
+
+
 
 .soc-icons {
 

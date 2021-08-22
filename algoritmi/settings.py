@@ -35,14 +35,17 @@ with open('/home/gradski/SECRET_KEYS/algoritmi_project.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','grazki.pythonanywhere.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     
+    #my_apps
     'algoblog.apps.AlgoblogConfig',
+
+
     'tinymce',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -53,6 +56,7 @@ INSTALLED_APPS = [
 
     # 3rd party apps
     'crispy_forms',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

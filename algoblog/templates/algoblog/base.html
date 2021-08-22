@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/e5e5503423.js" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     
     <title>{% block title %}{% endblock %}</title>
@@ -18,14 +21,14 @@
     <div class="wrapper">
 
                                         <header>
-                                            <h1> Algorithms and stuff..</h1>
+                                            <h1>Algorithms and stuff..</h1>
 
                                             <h3>My solutions to various problems</h3>
 
                                             <div class="menu">
-                                                <a href="{% url 'algoblog:post_list' %}">home</a>
-                                                <a href="{% url 'algoblog:about' %}">about</a>
-                                                <a href="{% url 'algoblog:contact' %}"">contact</a>
+                                                <a href="{% url 'algoblog:post_list' %}">HOME</a>
+                                                <a href="{% url 'algoblog:about' %}">ABOUT</a>
+                                                <a href="{% url 'algoblog:contact' %}">CONTACT</a>
                                             </div>
                                             
                                             
@@ -44,11 +47,31 @@
                                     <div class="container1">
                                                 
                                                     <div class="about">
-                                                    <h6>Hello there!</h6>
-                                                    <p> <i> My name is Ivan Urban </i>      </p>
-                                                    <p>I am a full stack developer. I am proficient in Datbases(MySQL, PostgreSQL) Python/Django, Javascript, CSS, HTML.
-                                                        I like coding puzzles, algorithms and photography. </p>
-                                                
+                                                            <h6>Hello there!</h6>
+                                                            <!-- <p> <i> My name is Ivan Urban </i>      </p> -->
+                                                            <p>I am a full stack developer. 
+                                                                I like  web development, coding puzzles, algorithms and photography. </p>
+                                                        
+                                                    </div>
+
+
+                                                    <div class="footer-contact">
+
+                                                        <div class="inner-contact">
+                                                                    <h6>Contact</h6>
+                                                                            
+                                                                    <!-- <p><img src="{% static 'img/mail.png'%}" width="20" height="20" alt="">ivanurban_bg@yahoo.com  </p> -->
+                                                                    <p id="email"><span><i class="far fa-envelope"></i>&nbsp;</span>ivanurban_bg@yahoo.com </p>
+
+
+                                                                    
+                                                                    <p><span><i class='fas fa-phone'></i>&nbsp;</span>011/123-4567</p>
+
+
+                                                        </div>
+                                            
+
+
                                                     </div>
 
                                     
