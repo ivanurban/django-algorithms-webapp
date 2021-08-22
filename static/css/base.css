@@ -93,17 +93,19 @@ justify-content: space-between;
 
 .container .links{
 
-    width: 15%;
+    width: 20%;
     margin: auto;
     /* background-color:#93E9BE; */
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding:50px 0 0 50px;
+    padding:50px 50px 50px 70px;
     color:#93E9BE;
-    font-size: 1em;
+    font-size: 1.15em;
     position: absolute;
-    border-left: 2px solid #477158;
+    /* border-left: 2px solid #477158; */
+
+
   
     
 
@@ -129,7 +131,7 @@ justify-content: space-between;
 
 .container .posts{
     
-    width: 85%;
+    width: 80%;
     /* margin:auto; */
     height :100%;
     text-align: left;
@@ -143,7 +145,8 @@ justify-content: space-between;
 
     border-left: 2px solid #477158;
    
-    margin-left:15%;
+    margin-left:20%;
+    
  
   
   
@@ -162,22 +165,72 @@ justify-content: space-between;
     margin-bottom: 25px;
 
 }    
-.container .hello{
-    
-    width: 85%;
-    margin:auto;
 
-    text-align: center;
-    padding:50px;
-    padding-left: 100px;
-    padding-right: 100px;
 
-    position: absolute;
-    left: 15%;
-    font-size: 2em;
+
+
+
+.container .posts .post-body{
 
   
 
+}
+
+.msB{
+
+    
+
+}
+
+.challenge_problem_statement_body{
+
+ 
+
+}
+
+.rtbTable{
+
+
+max-width: 900px;
+padding-top: 50px;
+   
+   
+
+}
+
+.rtbTable tr td{
+
+ 
+   
+   
+}
+
+/*class name in rich text box */
+.language-python{
+
+    
+
+
+   
+}
+
+pre { 
+    white-space: pre-wrap; 
+    word-break: break-word;
+   
+
+    /* overflow-x: scroll; */
+}
+
+pre code{
+
+    /* overflow-x: scroll; */
+  
+
+}
+pre.prettyprint {
+    /* border: none !important; */
+    padding:50px 0px 50px 50px;
 }
 
 
@@ -220,9 +273,9 @@ justify-content: space-between;
     padding:10px;
     width: 500px;
    
-    
-  
+   
     color:#B5B3CA;
+    background-color: #26272B;
 }
 
 
@@ -241,13 +294,7 @@ justify-content: space-between;
         
 }
 
-.about-image{
 
-}
-.about-text{
-
-
-}
 
 
 /*FOOTER*/
@@ -378,21 +425,116 @@ text-align: right;
 /*SMALLER SCREENS START*/
 
 @media (max-width: 1400px){
+        .container .links{
+
+            padding:30px 30px 0 30px;
+            
+            font-size: 1em;
+    
+        
+        }
+   
+}
+
+@media (max-width: 1200px){
     .container .links{
 
-        padding:30px 0 0 30px;
+        padding:15px 15px 0 15px;
         
-        font-size: 1em;
+        font-size: 0.86em;
+  
     
         
     
     }
-            
+
+    .container .posts{
+    
+        width: 80%;
+        /* margin:auto; */
+        height :100%;
+        text-align: left;
+        padding:50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+        /* position: absolute; */
+        /* left: 15%; */
+        font-size: 1.1em;
+    
+      
+       
+        margin-left:20%;
+     
+      
+      
     
     }
+
+    .container .posts .post-body{
+
+  
+    
+    }
+
+    .language-python{
+
+
+    }    
+
+}
+@media (max-width: 620px){
+
+    /*detail page*/
+    .container{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .container .links{
+
+       
+        position: relative;
+        width: 100%;
+       font-size: 1.3em;
+        text-align: center;
+        padding: 50px;
+        
+    
+    }
+    .container .posts{
+    
+        width: 100%;
+    
+        text-align: justify;
+       
+        margin-left:0;
+
+        padding: 50px;
+        
+     
+      
+      
+    
+    }
+
+    .menu{
+
+        flex-direction: column;
+        
+    
+        }
+
+    .menu a{
+
+        padding-top: 20px;
+    }
+        
 
 
 }
+
+
 
 
 

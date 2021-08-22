@@ -4,71 +4,61 @@
 
 {% block content %}
 
-
-   
-
-                                    <div class="container">
+<div class="container">
 
 
+            <div class="links">
+                {% for l in link_list%}
 
 
+                        <a href="{{ l.get_absolute_url }}">
+
+                            {{ l.title }}
 
 
-
-                                                                <div class="links">
-                                                                    {% for l in link_list%}
+                        </a>
 
 
-                                                                            <a href="{{ l.get_absolute_url }}">
-
-                                                                                {{ l.title }}
+                {% endfor %}
 
 
-                                                                            </a>
+            </div>
 
-
-                                                                    {% endfor %}
-
-
-                                                                </div>
-
-                                                                <div class="posts">
+            <div class="posts">
 
 
 
-                                                                            <h1 class="title">{{ post.title }}</h1>
+                        <h1 class="title">{{ post.title }}</h1>
 
-                                                                            <div class="date">
-
-
-                                                                            Published by {{ post.author }}
-                                                                            <!-- 
-                                                                                            {{ post.publish }} -->
-
-                                                                            </div>
+                        <div class="date">
 
 
-                                                                            {% with body=post.body|safe %}
+                        Published by {{ post.author }}
+                        <!-- 
+                                        {{ post.publish }} -->
 
-                                                                                {{ body }}
+                        </div>
+
+
+                        {% with body=post.body|safe %}
+
+
+
+                        
+                        <div class="post-body">
+
+                            {{ body }}
+
+                        </div>
                                                                                 
-                                                                            {% endwith %}
+                        {% endwith %}
 
-                                                                                
+                        
 
-
-                                                                </div>
-
-
-                                    </div>
+            </div>
 
 
-
-
-
-
-
-    
+</div>
 
 
 {% endblock %}
