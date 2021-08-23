@@ -166,6 +166,10 @@ justify-content: space-between;
 
 }    
 
+.difficulty-level{
+
+    font-size: 0.8em;
+}
 
 
 
@@ -230,7 +234,7 @@ pre code{
 }
 pre.prettyprint {
     /* border: none !important; */
-    padding:50px 0px 50px 50px;
+    padding:50px 50px 50px 50px;
 }
 
 
@@ -301,10 +305,10 @@ pre.prettyprint {
 .site-footer
         {
 
-            flex-shrink: 0;
+        flex-shrink: 0;
         background-color:#26272b;
         /* padding:45px 0 20px; */
-        padding:100px;
+        padding:75px;
         font-size:15px;
         line-height:24px;
         color:#737373;
@@ -433,6 +437,8 @@ text-align: right;
     
         
         }
+
+
    
 }
 
@@ -483,6 +489,57 @@ text-align: right;
     }    
 
 }
+
+@media (max-width: 820px){
+
+
+    .site-footer .container1, .site-footer hr, .site-footer .container2 {
+
+        width: 90%;
+    
+    }
+    .site-footer .container1, .site-footer .container2{
+
+        flex-direction: column;
+        
+    }
+    .site-footer .container1 .about,.site-footer .container1 .footer-contact  {
+
+        width: 100%;
+
+        
+      }
+
+      .site-footer .container1 .footer-contact .inner-contact {
+
+
+        text-align: left;
+        margin-top: 20px;
+        
+            
+        }
+
+        .copyright-text
+            {
+            margin-bottom: 20px;
+            }
+
+                    
+            .soc-icons {
+
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+
+        
+
+    
+}
+
+ 
+    
 @media (max-width: 620px){
 
     /*detail page*/
@@ -527,9 +584,56 @@ text-align: right;
 
     .menu a{
 
-        padding-top: 20px;
+        padding-top: 15px;
     }
         
+
+
+    .container-about{
+        width: 100%;
+        padding:25px;
+        margin:5px auto 0 auto;
+          
+    
+    
+            
+    }
+
+    .contact-container{
+        
+        width: 100%;
+        margin:5px auto 0 auto;
+        padding:25px;
+         
+           
+          
+         
+    
+    }
+
+    .form-control-text{
+
+        height: 30px;
+        width: 250px;
+    }
+
+    .form-control-textarea{
+
+    
+        width: 250px;
+    }
+
+    #sendMailButton{
+
+        padding:10px;
+        width: 250px;
+    
+    
+    }
+
+
+    
+    
 
 
 }
